@@ -1,0 +1,17 @@
+<h1>{{title}}</h1>
+<h2>My favorite hero is:{{myHero}}</h2>
+<p>Heroes</p>
+<p *ngIf="myHeroes.length>3">There are many heroes.</p>
+<ul>
+  <li *ngFor="let hero of myHeroes">
+    {{hero.name}}
+  </li>
+</ul>
+<input #phone placeholder="phone number" >
+<button (click)="callPhone(phone.value)">Call</button>
+<table border="1">
+  <tr><td [attr.colspan]="2">One-Two</td></tr>
+  <tr><td>Five</td><td>Six</td></tr>
+</table>
+<app-car></app-car>
+
